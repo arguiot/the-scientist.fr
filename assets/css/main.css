@@ -95,6 +95,109 @@ body {
     #featured a:hover {
       background-color: rgba(255, 255, 255, 0.3); }
 
+nav {
+  background: #fff; }
+  nav:after {
+    clear: both; }
+  nav h2 {
+    margin: 0;
+    padding: 10px 25px;
+    font-size: 2.5em;
+    font-weight: 200;
+    display: inline-block; }
+  nav ul {
+    float: right;
+    margin: 1.5em 0; }
+    nav ul li {
+      display: inline-block;
+      list-style: none; }
+      nav ul li a {
+        color: #444;
+        text-decoration: none;
+        padding: 20px; }
+
 .articles {
   height: 200vh;
-  background-color: #fff; }
+  background-color: #fff;
+  clear: both;
+  position: relative; }
+  .articles .box {
+    text-align: center;
+    overflow: hidden;
+    display: inline-block;
+    position: absolute; }
+    .articles .box .content {
+      transform: translateX(50vw);
+      width: 100%;
+      height: 100%;
+      opacity: 0;
+      background: #fff;
+      transition: all 500ms cubic-bezier(0.2, 0, 0.6, 1); }
+      .articles .box .content h3 {
+        font-size: 3em;
+        font-weight: 200;
+        margin: 0; }
+      .articles .box .content p {
+        font-size: 1.75em;
+        font-weight: 300; }
+      .articles .box .content a {
+        border: 1px solid black;
+        border-radius: 50px;
+        padding: 15px 20px;
+        color: black;
+        text-decoration: none; }
+        .articles .box .content a:hover {
+          background: rgba(0, 0, 0, 0.05); }
+    .articles .box:hover {
+      cursor: pointer;
+      box-shadow: 0 1px 10px rgba(0, 0, 0, 0.3);
+      z-index: 80; }
+      .articles .box:hover .content {
+        transform: translateX(0vw);
+        opacity: 0.95; }
+
+.big {
+  width: 50vw;
+  height: 50vw; }
+  .big h3 {
+    padding: 3.5em 0 0; }
+  .big p {
+    margin-bottom: 2em; }
+
+.large {
+  width: 50vw;
+  height: 25vw; }
+
+.small {
+  width: 25vw;
+  height: 25vw; }
+  .small:last-child {
+    float: right; }
+
+.sierra {
+  background: url(../img/sierra.jpg);
+  background-size: cover;
+  background-position: center;
+  top: 0;
+  left: 0; }
+
+.ios {
+  background: url(../img/ios.jpg);
+  background-size: cover;
+  background-position: center;
+  top: 0;
+  right: 0; }
+
+.WWDC {
+  background: url(../img/wwdc.jpg);
+  background-size: cover;
+  background-position: center;
+  top: 25vw;
+  right: 25vw; }
+
+.Macbook {
+  background: url(../img/macbook.jpg);
+  background-size: cover;
+  background-position: center;
+  top: 25vw;
+  right: 0; }
