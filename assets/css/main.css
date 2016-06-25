@@ -106,7 +106,27 @@ nav {
         padding: 20px; }
         nav ul li a:hover {
           color: #777; }
+  nav svg {
+    display: none; }
 
+@media (max-width: 600px) {
+  nav svg {
+    display: inline-block;
+    float: right;
+    margin: 1.5em 1em;
+    cursor: pointer; }
+  nav ul {
+    display: none;
+    float: none;
+    margin: 0;
+    text-align: center;
+    padding: 0 15px; }
+    nav ul li {
+      display: block;
+      padding: 0.7em 0;
+      border-bottom: 1px solid #DDD; }
+  nav ul.show {
+    display: block; } }
 .articles {
   height: 200vh;
   background-color: #fff;
@@ -217,3 +237,31 @@ nav {
     content: "Mackbook"; }
   .appl-l p:after {
     content: "Apple sort un nouveau Macb..."; }
+
+@media (max-width: 1120px) {
+  .large h3 {
+    padding-top: 0.7em; }
+  .large p {
+    margin-bottom: 3vw; }
+
+  .small h3 {
+    padding: 0.7em 0 0; }
+  .small p {
+    margin-bottom: 2vw; }
+
+  .big p {
+    margin-bottom: 7vw; }
+
+  .articles .box .content h3 {
+    font-size: 2em; }
+  .articles .box .content p {
+    font-size: 1em; }
+  .articles .box .content a {
+    font-size: 1em;
+    padding: 10px 15px; } }
+@media (max-width: 700px) {
+  .articles .box.small .content a {
+    font-weight: 0.7em;
+    padding: 7px 10px; }
+  .articles .box.small .content h3 {
+    padding-top: 2vw; } }
