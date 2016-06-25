@@ -51,49 +51,38 @@ body {
   padding: 0;
   font-family: "Source Sans Pro", "Helvetica", Arial, sans-serif; }
 
-.cntr {
-  display: flex;
-  justify-content: center;
-  width: 100vw; }
-  .cntr * {
-    display: block; }
-
-.wrapper {
-  width: 860px;
-  max-width: 90%;
-  text-align: center; }
-
-body {
-  background: url(../img/fhbg.jpg);
-  background-size: cover;
-  background-attachment: fixed;
-  background-position: center; }
-
 #featured {
-  background: rgba(0, 0, 0, 0.5);
   height: 400px;
-  text-align: center; }
-  #featured h1 {
-    display: block;
-    width: 100%;
-    margin: 0;
-    padding: 1em 0;
-    font-size: 3em;
-    color: #fff; }
-  #featured p {
-    width: 300px;
-    max-width: 80%;
-    margin: 0 auto;
-    padding-bottom: 5em;
-    color: #fff; }
-  #featured a {
-    color: #fff;
-    text-decoration: none;
-    padding: 15px 20px;
-    border: 2px solid #fff;
-    border-radius: 200px; }
-    #featured a:hover {
-      background-color: rgba(255, 255, 255, 0.3); }
+  text-align: center;
+  overflow: hidden;
+  background: url(../img/fhbg.jpg);
+  background-position: center;
+  background-attachment: fixed;
+  background-size: cover; }
+  #featured .content {
+    background: rgba(0, 0, 0, 0.3);
+    height: 400px; }
+    #featured .content h1 {
+      display: block;
+      width: 100%;
+      margin: 0;
+      padding: 1em 0;
+      font-size: 3em;
+      color: #fff; }
+    #featured .content p {
+      width: 300px;
+      max-width: 80%;
+      margin: 0 auto;
+      padding-bottom: 5em;
+      color: #fff; }
+    #featured .content a {
+      color: #fff;
+      text-decoration: none;
+      padding: 15px 20px;
+      border: 2px solid #fff;
+      border-radius: 200px; }
+      #featured .content a:hover {
+        background-color: rgba(255, 255, 255, 0.3); }
 
 nav {
   background: #fff; }
@@ -115,6 +104,8 @@ nav {
         color: #444;
         text-decoration: none;
         padding: 20px; }
+        nav ul li a:hover {
+          color: #777; }
 
 .articles {
   height: 200vh;
@@ -125,7 +116,8 @@ nav {
     text-align: center;
     overflow: hidden;
     display: inline-block;
-    position: absolute; }
+    position: absolute;
+    box-shadow: 0 0px 0px transparent; }
     .articles .box .content {
       transform: translateX(50vw);
       width: 100%;
@@ -167,37 +159,61 @@ nav {
 .large {
   width: 50vw;
   height: 25vw; }
+  .large h3 {
+    padding: 1.5em 0 0; }
+  .large p {
+    margin-bottom: 1em; }
 
 .small {
   width: 25vw;
   height: 25vw; }
+  .small h3 {
+    padding: 1em 0 0; }
+  .small p {
+    margin-bottom: 1em; }
   .small:last-child {
     float: right; }
 
-.sierra {
-  background: url(../img/sierra.jpg);
+.appl-f {
+  background: url(../img/apple-big.jpg);
   background-size: cover;
   background-position: center;
   top: 0;
   left: 0; }
+  .appl-f h3:after {
+    content: "MacOs Sierra"; }
+  .appl-f p:after {
+    content: "Siri est maintenant sur mac, avec des..."; }
 
-.ios {
-  background: url(../img/ios.jpg);
+.appl-s {
+  background: url(../img/apple-large.jpg);
   background-size: cover;
   background-position: center;
   top: 0;
   right: 0; }
+  .appl-s h3:after {
+    content: "iOS 10"; }
+  .appl-s p:after {
+    content: "Apple lance sa nouvelle version d'..."; }
 
-.WWDC {
-  background: url(../img/wwdc.jpg);
+.appl-t {
+  background: url(../img/apple-small.jpg);
   background-size: cover;
   background-position: center;
   top: 25vw;
   right: 25vw; }
+  .appl-t h3:after {
+    content: "WWDC 16"; }
+  .appl-t p:after {
+    content: "Comme tous les ans, Appl..."; }
 
-.Macbook {
-  background: url(../img/macbook.jpg);
+.appl-l {
+  background: url(../img/apple-last.jpg);
   background-size: cover;
   background-position: center;
   top: 25vw;
   right: 0; }
+  .appl-l h3:after {
+    content: "Mackbook"; }
+  .appl-l p:after {
+    content: "Apple sort un nouveau Macb..."; }
