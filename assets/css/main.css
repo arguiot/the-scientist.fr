@@ -58,7 +58,9 @@ body {
   background: url(../img/fhbg.jpg);
   background-position: center;
   background-attachment: fixed;
-  background-size: cover; }
+  background-size: cover;
+  position: relative;
+  z-index: 3; }
   #featured .content {
     background: rgba(0, 0, 0, 0.3);
     height: 400px; }
@@ -85,7 +87,9 @@ body {
         background-color: rgba(255, 255, 255, 0.3); }
 
 nav {
-  background: #fff; }
+  background: #fff;
+  position: relative;
+  z-index: 4; }
   nav:after {
     clear: both; }
   nav h2 {
@@ -128,10 +132,12 @@ nav {
   nav ul.show {
     display: block; } }
 .articles {
-  height: 200vh;
   background-color: #fff;
+  height: 100vw;
   clear: both;
-  position: relative; }
+  position: relative;
+  margin-bottom: 400px;
+  z-index: 2; }
   .articles .box {
     text-align: center;
     overflow: hidden;
@@ -153,17 +159,17 @@ nav {
         font-size: 1.75em;
         font-weight: 300; }
       .articles .box .content a {
-        border: 1px solid black;
-        border-radius: 50px;
-        padding: 15px 20px;
         color: black;
         text-decoration: none; }
-        .articles .box .content a:hover {
+      .articles .box .content a#read {
+        border: 1px solid black;
+        border-radius: 50px;
+        padding: 15px 20px; }
+        .articles .box .content a#read:hover {
           background: rgba(0, 0, 0, 0.05); }
     .articles .box:hover {
       cursor: pointer;
-      box-shadow: 0 1px 10px rgba(0, 0, 0, 0.3);
-      z-index: 80; }
+      box-shadow: 0 1px 10px rgba(0, 0, 0, 0.3); }
       .articles .box:hover .content {
         transform: translateX(0vw);
         opacity: 0.95; }
@@ -234,9 +240,53 @@ nav {
   top: 25vw;
   right: 0; }
   .appl-l h3:after {
-    content: "Mackbook"; }
+    content: "Macbook"; }
   .appl-l p:after {
     content: "Apple sort un nouveau Macb..."; }
+
+.goog-f {
+  background: url(../img/google-big.jpg);
+  background-size: cover;
+  background-position: center;
+  top: 50vw;
+  right: 0; }
+  .goog-f h3:after {
+    content: "Google IO/16"; }
+  .goog-f p:after {
+    content: "Touts les ans, Google organise..."; }
+
+.goog-s {
+  background: url(../img/google-large.jpg);
+  background-size: cover;
+  background-position: center;
+  top: 50vw;
+  left: 0; }
+  .goog-s h3:after {
+    content: "Material Design"; }
+  .goog-s p:after {
+    content: "Google a son propre language de des..."; }
+
+.goog-t {
+  background: url(../img/google-small.jpg);
+  background-size: cover;
+  background-position: center;
+  top: 75vw;
+  left: 0; }
+  .goog-t h3:after {
+    content: "Cardboard"; }
+  .goog-t p:after {
+    content: "La realitee virtuelle acc..."; }
+
+.goog-l {
+  background: url(../img/google-last.jpg);
+  background-size: cover;
+  background-position: center;
+  top: 75vw;
+  left: 25vw; }
+  .goog-l h3:after {
+    content: "Project Loon"; }
+  .goog-l p:after {
+    content: "Avec ce projet, Goo..."; }
 
 @media (max-width: 1120px) {
   .large h3 {
@@ -265,3 +315,44 @@ nav {
     padding: 7px 10px; }
   .articles .box.small .content h3 {
     padding-top: 2vw; } }
+footer {
+  background: #0A0A23;
+  color: #fff;
+  padding: 40px;
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  position: fixed;
+  bottom: 0; }
+  footer .col-1-of-4 {
+    width: 25%;
+    display: inline-block;
+    margin: 0 10px; }
+  footer .col-1-of-2 {
+    width: 50%;
+    display: inline-block; }
+  footer h1 {
+    margin: 0;
+    font-weight: 200; }
+  footer ul {
+    padding: 0; }
+    footer ul li {
+      list-style-type: none; }
+      footer ul li a.link {
+        color: #fff;
+        text-decoration: none; }
+  footer form input[type="email"] {
+    border: 0;
+    border-radius: 2px;
+    padding: 5px 10px;
+    display: block;
+    width: 60%; }
+  footer form input[type="submit"] {
+    border-radius: 100px;
+    border: 0;
+    padding: 10px 15px;
+    display: block;
+    margin-top: 20px;
+    background-color: #00BBFF;
+    color: #fff;
+    font-size: 1em; }
