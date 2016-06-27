@@ -1,3 +1,4 @@
+//Menu scroll
 $( document ).ready(function() {
     $('svg.menu').click(function() {
       $('ul.nav').toggleClass('show')
