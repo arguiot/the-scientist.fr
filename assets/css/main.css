@@ -136,7 +136,7 @@ nav {
   height: 100vw;
   clear: both;
   position: relative;
-  margin-bottom: 400px;
+  margin-bottom: 300px;
   z-index: 2; }
   .articles .box {
     text-align: center;
@@ -319,12 +319,12 @@ footer {
   background: #0A0A23;
   color: #fff;
   padding: 40px;
-  display: flex;
   width: 100%;
-  justify-content: center;
   position: fixed;
-  bottom: 0; }
+  bottom: 0;
+  height: 300px;}
   footer .row {
+    margin: auto;
     display: -webkit-box;
     display: -webkit-flex;
     display: -ms-flexbox;
